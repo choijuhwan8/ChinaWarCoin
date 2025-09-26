@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark light;
+  }
+
+  body {
+    @apply bg-background text-[#f2f4ff] font-sans antialiased;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply rounded-2xl border border-[rgba(99,102,241,0.15)] bg-[rgba(15,18,34,0.8)] backdrop-blur-md transition-transform duration-200 ease-out;
+  }
+
+  .glass-card:hover {
+    @apply -translate-y-1 border-[rgba(129,140,248,0.4)];
+  }
+
+  .section-title {
+    @apply mb-6 flex flex-col gap-3 text-left sm:items-center sm:text-center;
+  }
+
+  .section-title span {
+    @apply text-xs font-semibold uppercase tracking-[0.6px] text-secondary;
+  }
+
+  .section-title h2 {
+    @apply text-2xl font-semibold text-[#f8f8ff] sm:text-3xl;
+  }
+
+  .stat-value {
+    @apply text-2xl font-bold text-[#e0e7ff];
+  }
+
+  .stat-label {
+    @apply mt-1 text-xs uppercase tracking-[0.5px] text-[#9ca1db];
+  }
+
+  .token-card h3 {
+    @apply flex items-center justify-between text-lg font-semibold text-[#f9f5ff];
+  }
+
+  .token-card p {
+    @apply leading-relaxed text-[#c7c9f7];
+  }
+
+  .roadmap-card h3 {
+    @apply mb-3 text-lg font-semibold text-[#c4b5fd];
+  }
+
+  .roadmap-card ul {
+    @apply list-disc space-y-2 pl-5 text-[#dee1ff];
+  }
+
+  .faq-card h3 {
+    @apply text-lg font-semibold text-[#e8e9ff];
+  }
+
+  .faq-card p {
+    @apply leading-7 text-[#c8ccff];
+  }
+}

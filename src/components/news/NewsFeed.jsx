@@ -17,7 +17,7 @@ export default function NewsFeed({ query, onQueryChange }) {
       [...prev, ...data.items].forEach((item) => merged.set(item.id, item));
       return Array.from(merged.values());
     });
-  }, [data, query.page]);
+  }, [data, query.page, query.language, query.q, query.refreshToken]);
 
   useEffect(() => {
     if (query.page === 1) setItems([]);

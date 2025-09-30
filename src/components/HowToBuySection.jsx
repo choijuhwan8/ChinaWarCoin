@@ -17,7 +17,7 @@ const HowToBuySection = () => (
     <div className="glass-card p-6 sm:p-8">
       <ol className="list-decimal space-y-3 break-all sm:break-normal pl-5 text-base leading-7 text-[#d7dcff]">
         {steps.map((step) => (
-          <li key={step}>{step}</li>
+          <li key={step}><span className="break-all sm:break-normal">{step}</span></li>
         ))}
       </ol>
     </div>

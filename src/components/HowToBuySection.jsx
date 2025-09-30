@@ -11,11 +11,11 @@ const steps = [
 const HowToBuySection = () => (
   <section id="how-to-buy" className="space-y-6">
     <div className="section-title sm:mx-auto sm:max-w-2xl">
-      <span>vHOW TO BUY</span>
+      <span>HOW TO BUY</span>
       <h2>Secure your ChinaWarCoin position in five steps</h2>
     </div>
     <div className="glass-card p-6 sm:p-8">
-      <ol className="list-decimal space-y-3 pl-5 text-base leading-7 text-[#d7dcff]">
+      <ol className="list-decimal space-y-3 break-all sm:break-normal pl-5 text-base leading-7 text-[#d7dcff]">
         {steps.map((step) => (
           <li key={step}>{step}</li>
         ))}

@@ -18,6 +18,9 @@ export default function NewsSection() {
       <div className="section-title sm:mx-auto sm:max-w-2xl">
         <span>Intel Briefings</span>
         <h2>Geopolitics and security headlines</h2>
+        <p className="mt-3 text-sm text-white/60">
+          News engine coming soon — live feeds activate once the backend is deployed.
+        </p>
       </div>
       <NewsFilters query={query} onChange={setQuery} />
       <NewsFeed query={query} onQueryChange={setQuery} />
